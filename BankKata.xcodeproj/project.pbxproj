@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B241B60B2215934B00E50408 /* printStatementREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = B241B60A2215934B00E50408 /* printStatementREADME.md */; };
+		B241B60E22159E6B00E50408 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B60D22159E6B00E50408 /* TransactionRepository.swift */; };
+		B241B6112215A1E900E50408 /* MockTransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B6102215A1E900E50408 /* MockTransactionRepository.swift */; };
+		B241B6132215B03E00E50408 /* StatementPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B6122215B03E00E50408 /* StatementPrinter.swift */; };
+		B241B6152215B0D900E50408 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B6142215B0D900E50408 /* Transaction.swift */; };
+		B241B6192215B2B000E50408 /* MockStatementPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B6182215B2B000E50408 /* MockStatementPrinter.swift */; };
+		B255933E2216E7540080363F /* TransactionRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255933D2216E7540080363F /* TransactionRepositoryTests.swift */; };
+		B25593402216F5940080363F /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255933F2216F5940080363F /* Clock.swift */; };
+		B25593422216F64B0080363F /* MockClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25593412216F64B0080363F /* MockClock.swift */; };
+		B25593442216F72A0080363F /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25593432216F7290080363F /* Stub.swift */; };
 		B287CA2422142E49009F49AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA2322142E49009F49AD /* AppDelegate.swift */; };
 		B287CA2622142E49009F49AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA2522142E49009F49AD /* ViewController.swift */; };
 		B287CA2922142E49009F49AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B287CA2722142E49009F49AD /* Main.storyboard */; };
@@ -14,6 +24,12 @@
 		B287CA2E22142E4A009F49AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B287CA2C22142E4A009F49AD /* LaunchScreen.storyboard */; };
 		B287CA3922142E4A009F49AD /* BankKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA3822142E4A009F49AD /* BankKataTests.swift */; };
 		B287CA4422142E4A009F49AD /* BankKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA4322142E4A009F49AD /* BankKataUITests.swift */; };
+		B287CA5322142EC3009F49AD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5222142EC3009F49AD /* Account.swift */; };
+		B287CA5822143CD8009F49AD /* PrintStatementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5722143CD8009F49AD /* PrintStatementFeature.swift */; };
+		B287CA5B22144E35009F49AD /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5A22144E35009F49AD /* Console.swift */; };
+		B287CA5D221451A4009F49AD /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5C221451A4009F49AD /* Terminal.swift */; };
+		B287CA60221455E0009F49AD /* MockConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5F221455E0009F49AD /* MockConsole.swift */; };
+		B287CA632214635C009F49AD /* NationalAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA622214635C009F49AD /* NationalAccountTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B241B60A2215934B00E50408 /* printStatementREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = printStatementREADME.md; sourceTree = "<group>"; };
+		B241B60D22159E6B00E50408 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
+		B241B6102215A1E900E50408 /* MockTransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionRepository.swift; sourceTree = "<group>"; };
+		B241B6122215B03E00E50408 /* StatementPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementPrinter.swift; sourceTree = "<group>"; };
+		B241B6142215B0D900E50408 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B241B6182215B2B000E50408 /* MockStatementPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStatementPrinter.swift; sourceTree = "<group>"; };
+		B255933D2216E7540080363F /* TransactionRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepositoryTests.swift; sourceTree = "<group>"; };
+		B255933F2216F5940080363F /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		B25593412216F64B0080363F /* MockClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClock.swift; sourceTree = "<group>"; };
+		B25593432216F7290080363F /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		B287CA2022142E49009F49AD /* BankKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B287CA2322142E49009F49AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B287CA2522142E49009F49AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +73,12 @@
 		B287CA3F22142E4A009F49AD /* BankKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B287CA4322142E4A009F49AD /* BankKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankKataUITests.swift; sourceTree = "<group>"; };
 		B287CA4522142E4A009F49AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B287CA5222142EC3009F49AD /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B287CA5722143CD8009F49AD /* PrintStatementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatementFeature.swift; sourceTree = "<group>"; };
+		B287CA5A22144E35009F49AD /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		B287CA5C221451A4009F49AD /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
+		B287CA5F221455E0009F49AD /* MockConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConsole.swift; sourceTree = "<group>"; };
+		B287CA622214635C009F49AD /* NationalAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalAccountTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +106,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B241B60C22159E5C00E50408 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				B241B60D22159E6B00E50408 /* TransactionRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		B241B60F2215A1D600E50408 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				B241B6102215A1E900E50408 /* MockTransactionRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		B241B6162215B22200E50408 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B25593432216F7290080363F /* Stub.swift */,
+				B241B6172215B23400E50408 /* Model */,
+				B287CA5E221455BF009F49AD /* Console */,
+				B241B60F2215A1D600E50408 /* Repo */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B241B6172215B23400E50408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B241B6182215B2B000E50408 /* MockStatementPrinter.swift */,
+				B25593412216F64B0080363F /* MockClock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B255933C2216E73A0080363F /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				B255933D2216E7540080363F /* TransactionRepositoryTests.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
 		B287CA1722142E49009F49AD = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +173,9 @@
 		B287CA2222142E49009F49AD /* BankKata */ = {
 			isa = PBXGroup;
 			children = (
+				B241B60C22159E5C00E50408 /* Repo */,
+				B287CA5922144D95009F49AD /* Console */,
+				B287CA5122142EB1009F49AD /* Model */,
 				B287CA2322142E49009F49AD /* AppDelegate.swift */,
 				B287CA2522142E49009F49AD /* ViewController.swift */,
 				B287CA2722142E49009F49AD /* Main.storyboard */,
@@ -110,6 +189,10 @@
 		B287CA3722142E4A009F49AD /* BankKataTests */ = {
 			isa = PBXGroup;
 			children = (
+				B241B6162215B22200E50408 /* Helpers */,
+				B255933C2216E73A0080363F /* Repo */,
+				B287CA6122146315009F49AD /* Model */,
+				B287CA54221430DA009F49AD /* feature */,
 				B287CA3822142E4A009F49AD /* BankKataTests.swift */,
 				B287CA3A22142E4A009F49AD /* Info.plist */,
 			);
@@ -123,6 +206,51 @@
 				B287CA4522142E4A009F49AD /* Info.plist */,
 			);
 			path = BankKataUITests;
+			sourceTree = "<group>";
+		};
+		B287CA5122142EB1009F49AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B287CA5222142EC3009F49AD /* Account.swift */,
+				B241B6122215B03E00E50408 /* StatementPrinter.swift */,
+				B241B6142215B0D900E50408 /* Transaction.swift */,
+				B255933F2216F5940080363F /* Clock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B287CA54221430DA009F49AD /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				B287CA5722143CD8009F49AD /* PrintStatementFeature.swift */,
+				B241B60A2215934B00E50408 /* printStatementREADME.md */,
+			);
+			path = feature;
+			sourceTree = "<group>";
+		};
+		B287CA5922144D95009F49AD /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				B287CA5A22144E35009F49AD /* Console.swift */,
+				B287CA5C221451A4009F49AD /* Terminal.swift */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		B287CA5E221455BF009F49AD /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				B287CA5F221455E0009F49AD /* MockConsole.swift */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		B287CA6122146315009F49AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B287CA622214635C009F49AD /* NationalAccountTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B241B60B2215934B00E50408 /* printStatementREADME.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +386,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B287CA2622142E49009F49AD /* ViewController.swift in Sources */,
+				B287CA5D221451A4009F49AD /* Terminal.swift in Sources */,
+				B241B6152215B0D900E50408 /* Transaction.swift in Sources */,
+				B25593402216F5940080363F /* Clock.swift in Sources */,
+				B241B60E22159E6B00E50408 /* TransactionRepository.swift in Sources */,
 				B287CA2422142E49009F49AD /* AppDelegate.swift in Sources */,
+				B287CA5322142EC3009F49AD /* Account.swift in Sources */,
+				B287CA5B22144E35009F49AD /* Console.swift in Sources */,
+				B241B6132215B03E00E50408 /* StatementPrinter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +401,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25593422216F64B0080363F /* MockClock.swift in Sources */,
+				B287CA60221455E0009F49AD /* MockConsole.swift in Sources */,
+				B287CA5822143CD8009F49AD /* PrintStatementFeature.swift in Sources */,
+				B241B6192215B2B000E50408 /* MockStatementPrinter.swift in Sources */,
+				B25593442216F72A0080363F /* Stub.swift in Sources */,
+				B241B6112215A1E900E50408 /* MockTransactionRepository.swift in Sources */,
 				B287CA3922142E4A009F49AD /* BankKataTests.swift in Sources */,
+				B287CA632214635C009F49AD /* NationalAccountTests.swift in Sources */,
+				B255933E2216E7540080363F /* TransactionRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
