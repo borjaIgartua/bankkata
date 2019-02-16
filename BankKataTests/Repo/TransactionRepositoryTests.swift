@@ -18,18 +18,27 @@ class TransactionRepositoryTests: XCTestCase {
     override func setUp() {
         clock = MockClock()
         transactionRepository = TransactionRepository(clock : clock)
+        clock.todayAsString().willReturn(TODAY)
     }
 
-    func testCreateAndStoreTransaction() {
+    func testCreateAndStoreDepositTransaction() {
 
-        clock.todayAsString().willReturn(TODAY)
         transactionRepository.addDeposit(100)
-
 
         let transactions = transactionRepository.allTransactions()
 
         XCTAssertEqual(transactions.count, 1)
         XCTAssertEqual(transactions[0], Transaction(date: TODAY, amount: 100))
+    }
+    
+    func testCreateAndStoreWithdrawalTransaction() {
+        
+        transactionRepository.addWithdrawal(100)
+        
+        let transactions = transactionRepository.allTransactions()
+        
+        XCTAssertEqual(transactions.count, 1)
+        XCTAssertEqual(transactions[0], Transaction(date: TODAY, amount: -100))
     }
 }
 

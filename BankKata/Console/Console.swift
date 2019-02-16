@@ -12,15 +12,10 @@ protocol ConsoleInterfaz {
     func printLine(_ line: String)
 }
 
-struct Console {
-    private var console: ConsoleInterfaz
-
-    init(console: ConsoleInterfaz) {
-        self.console = console
-    }
-
+struct Console: ConsoleInterfaz {
+    
     func printLine(_ line: String) {
-        self.console.printLine(line)
+        print(line)
     }
 }
 

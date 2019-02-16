@@ -17,12 +17,13 @@ class TransactionRepository {
     }
 
     func addDeposit(_ amount: Int) {
-        let depositTransaction = Transaction(date: clock.todayAsString(), amount: amount)
-        transactions.append(depositTransaction)
+        let deposit = Transaction(date: clock.todayAsString(), amount: amount)
+        transactions.append(deposit)
     }
 
     func addWithdrawal(_ amount: Int) {
-        preconditionFailure("non implemented")
+        let withdrawal = Transaction(date: clock.todayAsString(), amount: -amount)
+        transactions.append(withdrawal)
     }
 
     func allTransactions() -> [Transaction] {

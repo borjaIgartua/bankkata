@@ -9,8 +9,8 @@
 import Foundation
 
 class Transaction: Equatable {
-    private var date: String
-    private var amount: Int
+    private(set) var date: String
+    private(set) var amount: Int
 
     init(date: String, amount: Int) {
         self.date = date

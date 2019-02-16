@@ -11,40 +11,35 @@ import XCTest
 
 class PrintStatementFeature: XCTestCase {
 
-    private var subject: Console!
-
     private var console = MockConsole()
     private var account: Account!
     private var clock: MockClock!
 
     override func setUp() {
-        subject = Console(console: console)
+        console = MockConsole()
         clock = MockClock()
+        
         let repository = TransactionRepository(clock: clock)
-        let printer = StatementPrinter()
+        let printer = StatementPrinter(printer: console)
         account = NationalAccount(repository: repository, printer: printer)
     }
 
     func testStatementContainsAllTransactions() {
-        /*  DATE         | AMOUNT    | BALANCE
-            10/04/2018   | 500.00    | 1400.00
-            02/04/2018   | -100.00   | 900.00
-            01/04/2018   | 1000.00   | 1000.00
-         */
-
+        
+        clock.todayAsString().willReturn("01/04/2018", "02/04/2018", "10/04/2018")
+        
         account.deposit(1000)
         account.withdraw(100)
         account.deposit(500)
         account.printStatement()
 
-        let expectedLog = """
-            DATE | AMOUNT | BALANCE
-            10/04/2018 | 500.00 | 1400.00
-            02/04/2018 | -100.00 | 900.00
-            01/04/2018 | 1000.00 | 1000.00
-            """
-        XCTAssertEqual(console.consoleLog, expectedLog)
+        XCTAssertTrue(console.printLine("DATE | AMOUNT | BALANCE"))
+        XCTAssertTrue(console.printLine("10/04/2018 | 500.00 | 1400.00"))
+        XCTAssertTrue(console.printLine("02/04/2018 | -100.00 | 900.00"))
+        XCTAssertTrue(console.printLine("01/04/2018 | 1000.00 | 1000.00"))
     }
 }
+
+
 
 

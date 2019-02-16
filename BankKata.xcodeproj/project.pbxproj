@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0086CFC32217110F00F7D90C /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086CFC22217110F00F7D90C /* ClockTests.swift */; };
+		0086CFC522171CDE00F7D90C /* StatementPrinterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086CFC422171CDE00F7D90C /* StatementPrinterTests.swift */; };
+		0086CFC722171EFC00F7D90C /* MockConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086CFC622171EFC00F7D90C /* MockConsole.swift */; };
+		0086CFC92217420800F7D90C /* MockConsoleV0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086CFC82217420800F7D90C /* MockConsoleV0.swift */; };
+		0086CFCC2217FF0B00F7D90C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086CFCB2217FF0B00F7D90C /* String.swift */; };
 		B241B60B2215934B00E50408 /* printStatementREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = B241B60A2215934B00E50408 /* printStatementREADME.md */; };
 		B241B60E22159E6B00E50408 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B60D22159E6B00E50408 /* TransactionRepository.swift */; };
 		B241B6112215A1E900E50408 /* MockTransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B241B6102215A1E900E50408 /* MockTransactionRepository.swift */; };
@@ -27,8 +32,6 @@
 		B287CA5322142EC3009F49AD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5222142EC3009F49AD /* Account.swift */; };
 		B287CA5822143CD8009F49AD /* PrintStatementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5722143CD8009F49AD /* PrintStatementFeature.swift */; };
 		B287CA5B22144E35009F49AD /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5A22144E35009F49AD /* Console.swift */; };
-		B287CA5D221451A4009F49AD /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5C221451A4009F49AD /* Terminal.swift */; };
-		B287CA60221455E0009F49AD /* MockConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA5F221455E0009F49AD /* MockConsole.swift */; };
 		B287CA632214635C009F49AD /* NationalAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B287CA622214635C009F49AD /* NationalAccountTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0086CFC22217110F00F7D90C /* ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTests.swift; sourceTree = "<group>"; };
+		0086CFC422171CDE00F7D90C /* StatementPrinterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementPrinterTests.swift; sourceTree = "<group>"; };
+		0086CFC622171EFC00F7D90C /* MockConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConsole.swift; sourceTree = "<group>"; };
+		0086CFC82217420800F7D90C /* MockConsoleV0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockConsoleV0.swift; path = ../../../../../../Desktop/MockConsoleV0.swift; sourceTree = "<group>"; };
+		0086CFCB2217FF0B00F7D90C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B241B60A2215934B00E50408 /* printStatementREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = printStatementREADME.md; sourceTree = "<group>"; };
 		B241B60D22159E6B00E50408 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
 		B241B6102215A1E900E50408 /* MockTransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionRepository.swift; sourceTree = "<group>"; };
@@ -76,8 +84,6 @@
 		B287CA5222142EC3009F49AD /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		B287CA5722143CD8009F49AD /* PrintStatementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintStatementFeature.swift; sourceTree = "<group>"; };
 		B287CA5A22144E35009F49AD /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
-		B287CA5C221451A4009F49AD /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
-		B287CA5F221455E0009F49AD /* MockConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConsole.swift; sourceTree = "<group>"; };
 		B287CA622214635C009F49AD /* NationalAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalAccountTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0086CFCA2217FEFC00F7D90C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0086CFCB2217FF0B00F7D90C /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B241B60C22159E5C00E50408 /* Repo */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +187,7 @@
 		B287CA2222142E49009F49AD /* BankKata */ = {
 			isa = PBXGroup;
 			children = (
+				0086CFCA2217FEFC00F7D90C /* Extensions */,
 				B241B60C22159E5C00E50408 /* Repo */,
 				B287CA5922144D95009F49AD /* Console */,
 				B287CA5122142EB1009F49AD /* Model */,
@@ -232,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				B287CA5A22144E35009F49AD /* Console.swift */,
-				B287CA5C221451A4009F49AD /* Terminal.swift */,
 			);
 			path = Console;
 			sourceTree = "<group>";
@@ -240,7 +254,8 @@
 		B287CA5E221455BF009F49AD /* Console */ = {
 			isa = PBXGroup;
 			children = (
-				B287CA5F221455E0009F49AD /* MockConsole.swift */,
+				0086CFC82217420800F7D90C /* MockConsoleV0.swift */,
+				0086CFC622171EFC00F7D90C /* MockConsole.swift */,
 			);
 			path = Console;
 			sourceTree = "<group>";
@@ -249,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				B287CA622214635C009F49AD /* NationalAccountTests.swift */,
+				0086CFC22217110F00F7D90C /* ClockTests.swift */,
+				0086CFC422171CDE00F7D90C /* StatementPrinterTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -386,9 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B287CA2622142E49009F49AD /* ViewController.swift in Sources */,
-				B287CA5D221451A4009F49AD /* Terminal.swift in Sources */,
 				B241B6152215B0D900E50408 /* Transaction.swift in Sources */,
 				B25593402216F5940080363F /* Clock.swift in Sources */,
+				0086CFCC2217FF0B00F7D90C /* String.swift in Sources */,
 				B241B60E22159E6B00E50408 /* TransactionRepository.swift in Sources */,
 				B287CA2422142E49009F49AD /* AppDelegate.swift in Sources */,
 				B287CA5322142EC3009F49AD /* Account.swift in Sources */,
@@ -402,13 +419,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25593422216F64B0080363F /* MockClock.swift in Sources */,
-				B287CA60221455E0009F49AD /* MockConsole.swift in Sources */,
 				B287CA5822143CD8009F49AD /* PrintStatementFeature.swift in Sources */,
 				B241B6192215B2B000E50408 /* MockStatementPrinter.swift in Sources */,
+				0086CFC32217110F00F7D90C /* ClockTests.swift in Sources */,
 				B25593442216F72A0080363F /* Stub.swift in Sources */,
+				0086CFC92217420800F7D90C /* MockConsoleV0.swift in Sources */,
 				B241B6112215A1E900E50408 /* MockTransactionRepository.swift in Sources */,
+				0086CFC722171EFC00F7D90C /* MockConsole.swift in Sources */,
 				B287CA3922142E4A009F49AD /* BankKataTests.swift in Sources */,
 				B287CA632214635C009F49AD /* NationalAccountTests.swift in Sources */,
+				0086CFC522171CDE00F7D90C /* StatementPrinterTests.swift in Sources */,
 				B255933E2216E7540080363F /* TransactionRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

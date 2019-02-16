@@ -10,15 +10,13 @@
 
 class MockStatementPrinter: StatementPrinter {
 
-    var printHasBeenCalled = false
-    var printParam: [Transaction]?
+    var printCalls = [[Transaction]]()
     override func print(_ transactions: [Transaction]) {
-        printHasBeenCalled = true
-        printParam = transactions
+        printCalls.append(transactions)
     }
 
     func print(_ transactions: [Transaction]) -> Bool {
-        return printHasBeenCalled && printParam == transactions
+        return printCalls.contains(transactions)
     }
 }
 

@@ -19,7 +19,7 @@ class NationalAccountTests: XCTestCase {
     override func setUp() {
         clock = MockClock()
         transactionRepository = MockTransactionRepository(clock: clock)
-        statementPrinter = MockStatementPrinter()
+        statementPrinter = MockStatementPrinter(printer: MockConsole())
         account = NationalAccount(repository: transactionRepository, printer: statementPrinter)
 
     }
